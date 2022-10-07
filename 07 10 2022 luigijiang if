@@ -1,0 +1,80 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        string nome = "Luigi";
+        string cognome = "Jiang";
+        string nome1="";
+        string cognome1="";
+        int id = 1234567;
+        int id1=0;
+        string inserisciNome(string s)
+        {
+            Console.WriteLine("inserisci il nome");
+            nome1 =Console.ReadLine();
+            Console.WriteLine("il nome è " + nome1);
+            return nome1;
+        }
+        string inserisciCognome(string s){
+            Console.WriteLine("inserisci il cognome");
+            cognome1 = Console.ReadLine();
+            Console.WriteLine("il cognome è " + cognome1);
+            return cognome1;
+        }
+        int inserisciID(int x)
+        {
+            Console.WriteLine("inserisci ID");
+            id1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("l'ID iserito è " + id1);
+            return id1;
+        }
+        inserisciNome(nome1);
+        inserisciCognome(cognome1);
+        void controllo()
+        {
+            /*inserisciNome(nome1);
+            inserisciCognome(cognome1);*/
+            /*if (nome1 == nome & cognome1 == cognome)
+            {
+                int id1=0;
+                Console.WriteLine("credenzieli corrette");
+                inserisciID(id1);
+                if (id1 == id)
+                {
+                    
+                    Console.WriteLine("id corretto");
+                }
+                else
+                {
+                    Console.WriteLine("id erratto");
+                }
+            }*/
+            if(nome1==nome){
+                if(cognome1==cognome){
+                    //int id1=0;
+                    Console.WriteLine("credenzieli corrette");
+                    inserisciID(id1);
+                        if (id1 == id)
+                        {
+                          Console.WriteLine("id corretto");
+                        }
+                        else
+                        {
+                        Console.WriteLine("id erratto");
+                        Console.WriteLine("id errato è "+id1);
+                        }
+                }
+                else{
+                    Console.WriteLine("cognome errato");
+                }
+            }
+            else{
+                Console.WriteLine("nome errato");
+                Console.WriteLine(nome);
+                Console.WriteLine(nome1);
+            }
+        }
+        controllo();
+        
+    }
+}
