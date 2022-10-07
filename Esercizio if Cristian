@@ -1,0 +1,37 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+
+    void inserisciDati()
+    {
+        Console.WriteLine("Inserisci il tuo nome: ");
+        string nome = Console.ReadLine();
+        
+
+        Console.WriteLine("Inserisci la tuo cognome: ");
+        string cognome = Console.ReadLine();
+        
+        int ID;
+
+        if (nome == "Cristian" & cognome == "Demeter" ) 
+        {
+            Console.WriteLine($"Benvenuto, {nome} {cognome}!");
+            Console.WriteLine("Per favore, inserisci il tuo ID:");
+            ID = Convert.ToInt32(Console.ReadLine());
+                if (ID == 134567)
+        
+            Console.WriteLine("Credenziali corrette, effettuo login...");
+        }
+         else
+        {
+            Console.WriteLine("Intruder alert!");
+        }
+
+
+    }
+
+    inserisciDati();
+
+    }
+}
