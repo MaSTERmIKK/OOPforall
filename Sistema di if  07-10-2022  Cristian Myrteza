@@ -1,0 +1,97 @@
+
+internal class Program{
+
+    public static void Main(string[] args)
+    {       
+        // DICHIARAZIONE OGGETTO  
+
+       Person p = new Person();
+
+       // CONDIZIONE NECESSARIA PER CAMBIARE I DATI
+
+       if(p.controllaDati()){           // controllaDati() è un metodo boolean, se è vero, i dati sono corretti e possono essere modificati
+
+         Console.WriteLine("inserisci il nuovo nome");
+         string nome = Console.ReadLine();
+       
+         Console.WriteLine("inserisci il nuovo cognome");
+         string cognome = Console.ReadLine();
+       
+         p.setDati(nome,cognome);   // setDati() si occupa di cambiare i dati
+       
+       }
+        Console.WriteLine("NOME : " + p.getNome() + "\n" + "COGNOME : " + p.getCognome());
+        //INIZIO ITERAZIONE
+
+     }
+
+
+}
+
+
+public class Person{     //DICHIARAZIONE DELLE VARIABILI DELL'OGGETTO
+
+    private string nome;
+    private string cognome;
+    private string id;
+    
+    public Person(){     // COSTRUTTORE PER INIZIALIZZARE LE VARIABILI
+        nome = "Cristian";
+        cognome = "Myrteza";
+        id = "134567";
+    }
+
+
+
+    public bool controllaDati(){   //METODO DI CONTROLLO (prende gli input e li confronta)
+       bool corretto = false;
+       
+       while(!corretto){
+        
+            Console.WriteLine("inserisci il mio nome");
+        
+            if(Console.ReadLine().ToLower() != nome.ToLower()){
+                
+                Console.WriteLine("nome errato, riprova");
+
+            }else{   
+
+                Console.WriteLine("inserisci il mio cognome");
+                
+                if(Console.ReadLine().ToLower() != cognome.ToLower()){
+                    
+                    Console.WriteLine("nome errato, riprova");
+
+                }else{
+                    
+                    Console.WriteLine("inserisci il mio ID");
+                
+                    if(Console.ReadLine() == id){
+
+                        corretto = true;
+
+                    }
+                }
+            }   
+        }
+
+       return corretto;     //RITORNA UN VALORE BOOL
+    }
+
+
+
+    public void setDati(string name,string surname){      //OGGETTI CON VARIABILI PRIVATE NECESSITANO DI METODI SET
+        nome = name;
+        cognome = surname;
+    }
+
+
+    public string getNome(){        //OGGETTI CON VARIABILI PRIVATE NECESSITANO DI METODI GET
+        return this.nome;
+    }
+
+
+    public string getCognome(){        //OGGETTI CON VARIABILI PRIVATE NECESSITANO DI METODI GET
+        return this.cognome;
+    }
+}
