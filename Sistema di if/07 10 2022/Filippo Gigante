@@ -1,0 +1,35 @@
+// See https://aka.ms/new-console-template for more information
+using System;
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Program program= new Program();
+        Console.WriteLine("ehi, saluta!");
+        string saluta=Console.ReadLine();
+        program.Salutare(saluta);
+    }
+
+    void Salutare(string saluto){
+        if(saluto == "ciao"){
+            Console.WriteLine("Grazie,Ciao!");
+        }else if(saluto=="arrivederci"){
+            Console.WriteLine("Grazie,Arrivederci!");
+        }else{
+            Console.WriteLine("non mi hai salutato!");
+        }
+
+        /*switch(saluto){
+            case "ciao":
+                Console.WriteLine("Grazie,Ciao!");
+                break;
+            case "arrivederci":
+                Console.WriteLine("Grazie,Arrivederci!");
+                break;
+            default:
+                Console.WriteLine("non mi hai salutato!");
+                break;
+        }*/
+    }
+
+}
