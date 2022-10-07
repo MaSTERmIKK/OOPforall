@@ -1,0 +1,94 @@
+
+internal class Program{
+
+    public static void Main(string[] args)
+    {       
+        // DICHIARAZIONE OGGETTO  
+
+       Person p = new Person();
+
+       // CONDIZIONE NECESSARIA PER CAMBIARE I DATI
+
+       if(p.controllaDati()){           // controllaDati() è un metodo boolean, se è vero, i dati sono corretti e possono essere modificati
+
+        string nome;
+        string cognome;
+        bool corretto = false;
+
+        do{
+
+         Console.WriteLine("inserisci il nuovo nome");
+         nome = Console.ReadLine();
+       
+         Console.WriteLine("inserisci il nuovo cognome");
+         cognome = Console.ReadLine();
+        
+        if(p.getNome().ToLower() != nome.ToLower() || p.getCognome().ToLower() != cognome.ToLower()){
+            corretto = true;
+        }else{
+            Console.WriteLine("HAI INSERITO GLI STRSSI DATI. RIPROVA \n \n");
+        }
+
+        }while(!corretto);
+
+         p.setNome(nome);
+         p.setCognome(cognome);   // setDati() si occupa di cambiare i dati
+       
+       }
+        Console.WriteLine("NOME : " + p.getNome() + "\n" + "COGNOME : " + p.getCognome());
+        //INIZIO ITERAZIONE
+
+     }
+
+
+}
+
+
+
+
+
+
+internal class Program{
+
+    public static void Main(string[] args)
+    {       
+        // DICHIARAZIONE OGGETTO  
+
+       Person p = new Person();
+
+       // CONDIZIONE NECESSARIA PER CAMBIARE I DATI
+
+       if(p.controllaDati()){           // controllaDati() è un metodo boolean, se è vero, i dati sono corretti e possono essere modificati
+
+        string nome;
+        string cognome;
+        bool corretto = false;
+
+        do{
+
+         Console.WriteLine("inserisci il nuovo nome");
+         nome = Console.ReadLine();
+       
+         Console.WriteLine("inserisci il nuovo cognome");
+         cognome = Console.ReadLine();
+        
+        if(p.getNome().ToLower() != nome.ToLower() || p.getCognome().ToLower() != cognome.ToLower()){
+            corretto = true;
+        }else{
+            Console.WriteLine("HAI INSERITO GLI STRSSI DATI. RIPROVA \n \n");
+        }
+
+        }while(!corretto);
+
+         p.setNome(nome);
+         p.setCognome(cognome);   // setDati() si occupa di cambiare i dati
+       
+       }
+        Console.WriteLine("NOME : " + p.getNome() + "\n" + "COGNOME : " + p.getCognome());
+        //INIZIO ITERAZIONE
+
+     }
+
+
+}
+
