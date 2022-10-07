@@ -1,0 +1,38 @@
+internal class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Che tipo di triangolo è? ");
+
+        int a,b,c; //Dichiarazione variabili
+
+        Thread.Sleep(1500);                                             //Mette in pausa il programma per 1500ms
+
+        //input primo lato
+        Console.WriteLine("Inserisci il primo lato del triangolo: ");
+        a = int.Parse (Console.ReadLine());
+
+        //input secondo lato
+        Console.WriteLine("Inserisci il secondo lato del triangolo: ");
+        b = int.Parse (Console.ReadLine());
+
+        //input terzo lato
+        Console.WriteLine("Inserisci il terzo lato del triangolo: ");
+        c = int.Parse (Console.ReadLine());
+
+        if (a == b && a == c)                                           //Se i lati sono tutti uguali
+        {
+        
+            Console.WriteLine("Il triangolo è equilatero");  
+
+        }
+        else if (a != b && a != c)                                      //Se i lati sono tutti diversi
+        {
+            Console.WriteLine("Il triangolo è scaleno"); 
+        }
+        else                                                            //Se due lati sono uguali e uno diverso
+        {
+            Console.WriteLine("Il triangolo è isoscele"); 
+        }
+    }
+}
