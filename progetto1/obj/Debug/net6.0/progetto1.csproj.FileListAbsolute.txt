@@ -1,0 +1,15 @@
+C:\Users\giaco\csharp\progetto1\bin\Debug\net6.0\progetto1.exe
+C:\Users\giaco\csharp\progetto1\bin\Debug\net6.0\progetto1.deps.json
+C:\Users\giaco\csharp\progetto1\bin\Debug\net6.0\progetto1.runtimeconfig.json
+C:\Users\giaco\csharp\progetto1\bin\Debug\net6.0\progetto1.dll
+C:\Users\giaco\csharp\progetto1\bin\Debug\net6.0\progetto1.pdb
+C:\Users\giaco\csharp\progetto1\obj\Debug\net6.0\progetto1.csproj.AssemblyReference.cache
+C:\Users\giaco\csharp\progetto1\obj\Debug\net6.0\progetto1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giaco\csharp\progetto1\obj\Debug\net6.0\progetto1.AssemblyInfoInputs.cache
+C:\Users\giaco\csharp\progetto1\obj\Debug\net6.0\progetto1.AssemblyInfo.cs
+C:\Users\giaco\csharp\progetto1\obj\Debug\net6.0\progetto1.csproj.CoreCompileInputs.cache
+C:\Users\giaco\csharp\progetto1\obj\Debug\net6.0\progetto1.dll
+C:\Users\giaco\csharp\progetto1\obj\Debug\net6.0\refint\progetto1.dll
+C:\Users\giaco\csharp\progetto1\obj\Debug\net6.0\progetto1.pdb
+C:\Users\giaco\csharp\progetto1\obj\Debug\net6.0\progetto1.genruntimeconfig.cache
+C:\Users\giaco\csharp\progetto1\obj\Debug\net6.0\ref\progetto1.dll
