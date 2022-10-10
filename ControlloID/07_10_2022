@@ -1,0 +1,105 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.Clear();
+        int cambio;
+        string nome;        
+        int ID1 = 123;
+        int ID;
+        string cognome;
+
+        void InserisciNome()
+        {       
+            do
+            {   
+                Console.WriteLine("Inserire Nome:");
+                nome = Console.ReadLine();
+
+                    if (nome == "alessio" )
+                    { 
+                        Console.WriteLine("Nome corretto");
+                        Thread.Sleep(1500);    
+                    }
+                    else
+                    {
+                        Console.WriteLine("Nome sconosciuto, si prega di reinserire:");
+                    }
+            }
+            while (nome != "alessio" );
+            Console.Clear();
+        }
+
+        void InserisciCognome()
+        {
+            do
+            {                        
+                Console.WriteLine("Inserire Cognome:");
+                cognome = Console.ReadLine();
+
+                    if (cognome == "landi" )
+                    { 
+                        Console.WriteLine("Cognome corretto");
+                        Thread.Sleep(1500);    
+                    }
+                    else
+                    {
+                        Console.WriteLine("Cognome sconosciuto, si prega di reinserire:");
+
+                    }
+            }
+            while (cognome != "landi" );
+            Console.Clear();
+        }
+
+        void InserisciID()
+        {
+            do
+            {        
+                Console.WriteLine("Inserire ID:");
+                ID = Convert.ToInt32(Console.ReadLine());
+                    if (ID == ID1 )
+                    { 
+                        Console.WriteLine("ID corretto");
+                        Thread.Sleep(1500);
+                        Console.Clear();
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("ID ERRATO!");
+                        Console.WriteLine("Si prega di reinserire l'ID");
+                    }
+            }
+            while (ID != ID1 );
+  
+        }
+
+        void CambioID()
+        {
+            int cambio;
+            Console.WriteLine("Desideri cambiare le credenziali? 1=SI o qualsiasi numero per uscire.");
+            cambio = Convert.ToInt32(Console.ReadLine());
+            if (cambio == 1 )
+            {
+                Console.WriteLine("Inserire nuovo nome:");
+                nome = Console.ReadLine();
+                Console.WriteLine("Inserire nuovo cognome:"); 
+                cognome = Console.ReadLine();
+                Console.WriteLine("Inserire nuovo ID");
+                ID1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Nome utente: " + nome + " " + cognome + " " + "ID: " + ID1);
+
+            }
+            else
+            {
+                Console.WriteLine("Logout");
+            }
+        }
+
+    InserisciNome();
+    InserisciCognome();
+    InserisciID();   
+    CambioID();
+    }
+}
